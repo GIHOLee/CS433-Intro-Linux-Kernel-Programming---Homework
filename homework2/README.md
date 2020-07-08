@@ -12,14 +12,14 @@
 3. hello3.c: passing command line arguments using MODULE_PARM() macro.
    Try to print some numbers and strings such as
    [/var/log/messages]
-   ...
+   ```
    #kernel: Loading Hello 3: Hello World 3
    #kernel: ==============================
    #kernel: Name : My Name
    #kernel: Street : 123 My Way 
    #kernel: City : North Newark
    #kernel: ZIP code : 98765
-   ...
+   ```
 
 Insert a module using "/sbin/insmod hello{1..3}.ko." Note that the dot after ko is not meant to be a part of the command (it's part of the sentence).
 Each time you insert it will print whatever you included in the module will be printed to console or /var/log/messages.
