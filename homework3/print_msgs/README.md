@@ -27,5 +27,6 @@ void __init setup_arch(char **cmdline_p)
 
 2. Compile the kernel and boot
 
-3. shell exec cmd and verify 
-   # dmesg | grep command_line
+3. shell exec cmd and verify:
+   
+		$sudo dmesg | grep command_line
