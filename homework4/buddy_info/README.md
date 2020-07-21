@@ -24,8 +24,7 @@ void buddy_info_show(void)
 	unsigned int order;
 	struct zone *zone;
 
-	for_each_zone(zone)
-	{
+	for_each_zone(zone)	{
 		printk(KERN_CONT "%s - Node %d, zone %8s ", OH_MY_NAME, zone->zone_pgdat->node_id, zone->name);
 		for (order = 0; order < MAX_ORDER; ++order)
 			printk(KERN_CONT "%6lu ", zone->free_area[order].nr_free);
