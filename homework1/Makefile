@@ -3,4 +3,4 @@ all:
 	gcc main.c -o $(APP)
 
 clean:
-	@rm $(APP)
+	-rm $(APP)
